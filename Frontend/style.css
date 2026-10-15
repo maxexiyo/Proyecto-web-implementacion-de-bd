@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  
+  background: #f3eee3;
+  color: #3a2c22;
+}
+
+#observaciones{
+  font-size: 16px;
+  font-style: normal;
+}
+
+
+#producto
+{
+  font-size: 15px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 40px;
+  background: #70503a;
+}
+
+h1
+{
+font-size: 30px !important;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+}
+
+
+main {
+  padding: 40px 24px;
+  font-size: 30px;
+}
+
+form {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 28px;
+  background: white;
+  border: 1px solid #d9d4cc;
+
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.gris {
+  margin: 4px 0 20px;
+  font-size: 13px;
+  color: #8a8178;
+}
+
+.fila {
+  display: flex;
+  gap: 22px;
+}
+
+.campo {
+  flex: 1;
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+#campo label input[type="checkbox"]
+{
+font-size: 50px;
+}
+
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 9px 10px;
+  font-size: 15px;
+  border: 1px solid #d9d4cc;
+  border-radius: 4px;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 9px 10px;
+  font-size: 12px;
+  border: 1px solid #d9d4cc;
+  border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #70503a;
+}
+
+.cantidad {
+  display: flex;
+  border: 1px solid #d9d4cc;
+  border-radius: 4px;
+}
+
+.cantidad button {
+  width: 36px;
+  background: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.cantidad input {
+  border: 0;
+  text-align: center;
+}
+
+small {
+  color: #b3261e;
+}
+
+#mensaje {
+  font-size: 15px;
+  color: #2e6b3a;
+}
+
+#mensaje.error {
+  color: #b3261e;
+}
+
+.botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.botones button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #70503a;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#vaciar {
+  background: white;
+  color: #70503a;
+}
+
+#registrar {
+  background: #70503a;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 0 24px;
+  }
+
+ 
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 16px;
+
+
+  }
+/* responsivo de celular*/
+  form {
+    padding: 18px 14px;
+  }
+
+  .fila {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .botones {
+    flex-direction: column-reverse;
+  }
+}
+

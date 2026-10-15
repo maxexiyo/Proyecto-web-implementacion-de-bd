@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: #f3eee3;
+  color: #3a2c22;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 40px;
+  background: #70503a;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+}
+
+main {
+  padding: 40px 24px;
+}
+
+.tarjeta {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 28px;
+  background: white;
+  border: 1px solid #d9d4cc;
+  border-radius: 8px;
+}
+
+.tarjeta h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.exito {
+  margin: 4px 0 20px;
+  font-size: 15px;
+  color: #2e6b3a;
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 22px;
+}
+
+.dato {
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d9d4cc;
+}
+
+.completo {
+  grid-column: 1 / -1;
+}
+
+.etiqueta {
+  font-size: 14px;
+  color: #8a8178;
+}
+
+.dato p {
+  margin: 4px 0 0;
+  font-size: 16px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  background: #70503a;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 0 24px;
+  }
+}
+
+/* responsivo de celular */
+@media (max-width: 600px) {
+  main {
+    padding: 16px;
+  }
+
+  .tarjeta {
+    padding: 18px 14px;
+  }
+
+  .tarjeta h1 {
+    font-size: 24px;
+  }
+
+  .datos {
+    grid-template-columns: 1fr;
+  }
+}
